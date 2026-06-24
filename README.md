@@ -26,18 +26,22 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
+      This is a guessing game where the user must enter guesses to find a correct number within a certain range.
 - [ ] Detail which bugs you found.
+      While initially playing this game, I noticed that the hints given to the user were incorrect. For example, if the correct number is 50 and the user guesses 40, then the game will incorrectly give a hint of "Too High". Another hint that I had found was that the game could not detect when the user guessed a number that was outside of the bounds to be guessed in.
 - [ ] Explain what fixes you applied.
+      To fix the first issue, I switched the "Too High"/"Too Low" hints in the code to correctly output based on when a user enters a guess that is too high/low. I added a check for if the user enters guesses that are out of bounds. Finally, I refactored the code so that the core logic was separate from the front facing code.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User enters a guess of 90
+2. Game returns "Too High"
+3. User enters a guess of 67 --> "Too Low"
+4. User enters a guess of 105 --> "Out of Bounds"
+5. Scores updates correctly after each guess
+6. Game ends after the correct guess
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
