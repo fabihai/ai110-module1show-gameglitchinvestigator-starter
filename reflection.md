@@ -48,11 +48,16 @@ Document at least 3 bugs you found. Add rows as needed.
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
+    Every time that a user interacts with the app, it re-runs the code from the beginning. Re-run meaning to repeat the sequence of the code instead of keeping the app "paused". The session state is used to store values that might be erased when the app re-runs, because those values should remain across different runs of the code. The session state acts as a memory location for the information needed, like the secret number in this game.
+
 ---
 
 ## 5. Looking ahead: your developer habits
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - This could be a testing habit, a prompting strategy, or a way you used Git.
+    - I want to use the diff ability to better compare my code with the suggestions from AI.
 - What is one thing you would do differently next time you work with AI on a coding task?
+    - I might use AI to get a further understanding of parts of the code that I don't understand.
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+    - I think it is definitely super useful to come up with tedious changes that might not be the most efficient to manually debug.
